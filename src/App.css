@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;600;700;900&family=Nunito:wght@500&display=swap');
+
+:root {
+  --main-bg-color: #282c34;
+  --accent-color: #61dafb;
+  --container-bg-color: #2c729be8;
+  --switch-label-bg-color: #4363cc;
+  --hover-bg-color: #e0e0e9f6;
+  --text-color: #fff;
+  --details-label-bg-color: white;
+  --border-color:  #08080e81;
+}
+
+.App {
+  text-align: center;
+  font-family: "Nunito";
+}
+
+.App-header {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--text-color);
+  height: 100vh;
+}
+
+/* Aplica blur na imagem de fundo*/
+.App-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://hips.hearstapps.com/hmg-prod/images/bryggen-street-bergen-architecture-water-winter-1576001288.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px); 
+  z-index: -1; }
+
+.App-link {
+  color: var(--accent-color);
+}
+
+
+.Container {
+  padding: 20px;
+  background-color: var(--container-bg-color);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 10px;
+}
+
+#title {
+  margin-bottom: 20px;
+}
+
+#detailsLocation {
+  margin-top: 5px;
+}
+
+#switchLabel {
+  font-size: 20px;
+  background-color: var(--container-bg-color);
+  border-radius: 1px 1px 10px 10px;
+  padding: 2px;
+  border: 1px solid var(--border-color);
+  
+}
+
+#cityNameWeather {
+  font-size: 25px;
+}
+
+#weather-icon {
+  margin-bottom: 6%;
+}
+
+#searchInputsGroup{
+  padding: 3px;
+  position: relative;
+  margin: 5px;
+
+}
+
+#searchInput:hover {
+  background-color: var(--hover-bg-color);
+}
+
+#descWeather {
+  margin-left: 15px;
+}
+
+#cityWeatherDetails {
+  padding: 0px;
+  margin: 10px;
+}
+
+#verticalLine {
+  border-right: 1px solid white;
+  height: 20px;
+  margin-left: 10px;
+  margin: 10px;
+}
